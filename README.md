@@ -23,16 +23,16 @@ HybridSP functions as a post-scoring model for protein-ligand complexes; therefo
 
 HybridSP accommodates a variety of statistical potential models, including: 
 
-HybridSP<sub>dk<sub>,
-HybridSP<sub>scr<sub>,
-HybridSP<sub>bl<sub>,
+HybridSP<sub>dk</sub>,
+HybridSP<sub>scr</sub>,
+HybridSP<sub>bl</sub>,
 DrugResidue,
-DrugResidue<sub>W<sub>,
+DrugResidue<sub>W</sub>,
 DrugResiGrp,
-DrugResiGrp<sub>W<sub>,
+DrugResiGrp<sub>W</sub>,
 DrugScoreRe,
-DrugScoreRe<sub>W<sub>,
+DrugScoreRe<sub>W</sub>,
 DrugScoreGrp, and
-DrugScoreGrp<sub>W<sub>
+DrugScoreGrp<sub>W</sub>
 
 The characteristics of each model are detailed in the corresponding paper.
