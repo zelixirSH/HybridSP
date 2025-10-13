@@ -18,4 +18,5 @@ The download links are as follows:
 
 ## Usage
 The protein should be provided in `pdb` format, and the ligand in `mol2` format. 
+
 HybridSP functions as a post-scoring model for protein-ligand complexes; therefore, the ligand must first be properly docked into the binding pocket using a docking program such as AutoDock Vina.
