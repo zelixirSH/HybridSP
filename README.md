@@ -34,5 +34,6 @@ HybridSP accommodates a variety of statistical potential models, including:
     DrugScoreRe<sub>W<sub>
     DrugScoreGrp
     DrugScoreGrp<sub>W<sub>
+    DrugResidue$_W$
 
 The characteristics of each model are detailed in the corresponding paper.
