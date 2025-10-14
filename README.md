@@ -34,4 +34,4 @@ DrugScoreRe<sub>W</sub>,
 DrugScoreGrp, and
 DrugScoreGrp<sub>W</sub>.
 
-The characteristics of each model are detailed in the corresponding paper.
+The characteristics of each model are detailed in the paper.
