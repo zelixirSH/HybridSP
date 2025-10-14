@@ -35,3 +35,13 @@ DrugScoreGrp, and
 DrugScoreGrp<sub>W</sub>.
 
 The characteristics of each model are detailed in the paper.
+
+### Examples
+Score with HybridSPdk:
+    python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m HybridSPdk -o examples/output_HybridSPdk.csv
+
+Score with DrugResiGrp<sub>W</sub>:
+    python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m DrugResidue_W -o examples/output_DrugResidue_W.csv
+
+Score with DrugScoreRe:
+    python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m DrugScoreRe -o examples/output_DrugScoreRe.csv
