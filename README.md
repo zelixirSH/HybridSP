@@ -51,6 +51,7 @@ Score with DrugScore<sup>Re</sup>:
 ```
 
 ### Tools
+#### 1. Docking-and-score pipeline for more accurate docking and screening
 To make things easier, we provide a protocol for docking-and-scoring using iDock (a fork of AutoDock Vina) and HybridSP, the input is a configuration file with the AutoDock Vina style, and the output mimics the iDock and Vina style, where the HybridSP score is presented with "REMARK HybridSP -0.91".
 
 Here is an example of the input configuration file:
