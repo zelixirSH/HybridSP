@@ -3,7 +3,7 @@ HybridSP is a novel hybrid statistical potential that combines distance-dependen
 It demonstrates exceptional accuracy in protein-ligand docking and virtual screening, rivaling or even surpassing state-of-the-art deep learning models.
 
 ## Installation
-The following packages should be installed:
+The following packages should be installed (using pip or conda):
 
     numpy
     openbabel
@@ -17,7 +17,7 @@ The download links are as follows:
     KORP-PL: https://team.inria.fr/nano-d/software/korp-pl/
 
 ## Usage
-The protein should be provided in `pdb` format, and the ligand in `mol2` format. 
+The protein should be provided in `pdb` format, and the ligand in `mol2` format. You may use openbabel for format convert. 
 
 HybridSP functions as a post-scoring model for protein-ligand complexes; therefore, the ligand must first be properly docked into the binding pocket using a docking program such as AutoDock Vina.
 
@@ -58,8 +58,12 @@ In order to use this protocol, you need to have iDock binary in your system, and
 The basic usage of the tool is:
 
 ```
-python pyidock_hybridSP.py -c vina.config
+python tools/pyidock_hybridSP.py -c vina.config
 ```
 
 ## Citation
 To be updated
+
+## Contacts
+To be updated
+
