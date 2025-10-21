@@ -53,6 +53,22 @@ Score with DrugScore<sup>Re</sup>:
 ### Tools
 To make things easier, we provide a protocol for docking-and-scoring using iDock (a fork of AutoDock Vina) and HybridSP, the input is a configuration file with the AutoDock Vina style, and the output mimics the iDock and Vina style, where the HybridSP score is presented with "REMARK HybridSP -0.91".
 
+Here is an example of the input configuration file:
+```
+receptor=receptor.pdb_mgltools.pdbqt
+ligand=ligand_input.pdbqt
+output=docked_output.pdbqt
+center_x=39.778
+center_y=48.178
+center_z=63.531
+size_x=20
+size_y=20
+size_z=20
+exhuastiveness=32
+cpu=16
+num_modes=10
+```
+
 In order to use this protocol, you need to have iDock binary in your system, and prepare your input configuration file with receptor, ligand, pocket and output defined as needed by AutoDock Vina. The example configuration file could be found in examples.
 
 The basic usage of the tool is:

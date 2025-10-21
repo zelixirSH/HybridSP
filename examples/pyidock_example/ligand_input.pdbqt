@@ -1,0 +1,57 @@
+REMARK  Name = ligand_input.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C17_17
+REMARK    2  A    between atoms: C11_11  and  C12_12
+REMARK    3  A    between atoms: C11_11  and  C14_14
+REMARK    4  A    between atoms: C12_12  and  C18_18
+REMARK    5  A    between atoms: C16_16  and  C19_19
+REMARK    6  A    between atoms: C17_17  and  C18_18
+REMARK    7  A    between atoms: C17_17  and  O1_23
+REMARK    8  A    between atoms: C18_18  and  N3_22
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C18 <0> A   1      51.552  56.991  21.856  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   1   6
+ATOM      2  C9  <0> A   1      51.527  54.519  20.979  0.00  0.00    +0.000 A 
+ATOM      3  C10 <0> A   1      51.338  54.918  23.205  0.00  0.00    +0.000 A 
+ATOM      4  C16 <0> A   1      51.536  53.332  21.609  0.00  0.00    +0.000 A 
+ATOM      5  N2  <0> A   1      51.481  53.584  23.065  0.00  0.00    +0.000 NA
+ATOM      6  N3  <0> A   1      51.464  55.544  22.034  0.00  0.00    +0.000 N 
+BRANCH   4   7
+ATOM      7  C19 <0> A   1      51.570  51.965  21.007  0.00  0.00    +0.000 C 
+ATOM      8  N1  <0> A   1      51.120  50.980  21.751  0.00  0.00    +0.000 N 
+ATOM      9  O2  <0> A   1      52.065  51.694  19.923  0.00  0.00    +0.000 OA
+ATOM     10  H19 <0> A   1      51.187  50.037  21.426  0.00  0.00    +0.000 HD
+ATOM     11  H20 <0> A   1      50.710  51.174  22.642  0.00  0.00    +0.000 HD
+ENDBRANCH   4   7
+ENDBRANCH   1   6
+BRANCH   1  13
+ATOM     12  C1  <0> A   1      53.814  57.318  20.492  0.00  0.00    +0.000 C 
+ATOM     13  C17 <0> A   1      53.051  57.533  21.827  0.00  0.00    +0.000 C 
+BRANCH  13  14
+ATOM     14  O1  <0> A   1      53.969  57.211  22.931  0.00  0.00    +0.000 OA
+ATOM     15  H21 <0> A   1      53.523  57.335  23.761  0.00  0.00    +0.000 HD
+ENDBRANCH  13  14
+ENDBRANCH   1  13
+BRANCH   1  16
+ATOM     16  C12 <0> A   1      50.671  57.460  20.678  0.00  0.00    +0.000 C 
+BRANCH  16  17
+ATOM     17  C11 <0> A   1      49.130  57.358  20.884  0.00  0.00    +0.000 C 
+BRANCH  17  26
+ATOM     18  C2  <0> A   1      48.098  55.413  16.171  0.00  0.00    +0.000 A 
+ATOM     19  C3  <0> A   1      48.520  54.842  17.377  0.00  0.00    +0.000 A 
+ATOM     20  C4  <0> A   1      47.518  59.700  18.322  0.00  0.00    +0.000 A 
+ATOM     21  C5  <0> A   1      47.762  56.765  16.108  0.00  0.00    +0.000 A 
+ATOM     22  C6  <0> A   1      48.678  55.642  18.524  0.00  0.00    +0.000 A 
+ATOM     23  C7  <0> A   1      47.504  58.903  17.176  0.00  0.00    +0.000 A 
+ATOM     24  C8  <0> A   1      48.022  59.182  19.517  0.00  0.00    +0.000 A 
+ATOM     25  C13 <0> A   1      47.903  57.559  17.259  0.00  0.00    +0.000 A 
+ATOM     26  C14 <0> A   1      48.417  57.836  19.626  0.00  0.00    +0.000 A 
+ATOM     27  C15 <0> A   1      48.388  57.027  18.465  0.00  0.00    +0.000 A 
+ENDBRANCH  17  26
+ENDBRANCH  16  17
+ENDBRANCH   1  16
+TORSDOF 7
