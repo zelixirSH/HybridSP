@@ -9,7 +9,7 @@ The following packages should be installed (using pip or conda):
     openbabel
 
 HybridSP consists of three statistical potentials: ITScoreAff (distance-dependent atom-atom potential), DrugResidue<sub>W</sub> (distance-dependent atom-residue potential), and KORP-PL (orientation-dependent atom-residue potential). 
-Among these, ITScoreAff and KORP-PL need to be downloaded separately, and the binary files `ITScoreAff` and `KORP-PL` should be placed in the "potentials" directory. 
+Among these, [ITScoreAff](http://huanglab.phys.hust.edu.cn/ITScoreAff/) and [KORP-PL](https://team.inria.fr/nano-d/software/korp-pl/) need to be downloaded separately, and the binary files `ITScoreAff` and `KORP-PL` should be placed in the "potentials" directory. 
 
 The download links are as follows:
 
@@ -77,6 +77,13 @@ The basic usage of the tool is:
 ```
 python tools/pyidock_hybridSP.py -c vina.config
 ```
+
+#### 2. Enzyme pocket design with fixed substrate conformation
+Given a reasonable enzyme-substrate binding complex structure (protein in pdb format, and the substrate in mol2 format), using method such as foldx for pocket residue mutation, then HybridSP is used for enzyme-substrate binding strength prediction. 
+
+The basic accuracy of HybridSP for this situation could be estimated based on the FEP dataset benchmark in the paper. 
+
+To be updated
 
 ## Citation
 To be updated
