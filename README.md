@@ -1,4 +1,4 @@
-# HybridSP
+# HybridSP: a hybrid statistical potential for protein-ligand interaction prediction
 HybridSP is a novel hybrid statistical potential that combines distance-dependent atom-atom, atom-residue, and orientation-dependent interactions into a unified scoring function. 
 It demonstrates exceptional accuracy in protein-ligand docking and virtual screening, rivaling or even surpassing state-of-the-art deep learning models.
 
@@ -38,13 +38,28 @@ The characteristics of each model are detailed in the paper.
 
 ### Examples
 Score with HybridSP<sub>dk</sub>:
-
+```
     python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m HybridSPdk -o examples/output_HybridSPdk.csv
-
+```
 Score with DrugResiGrp<sub>W</sub>:
-
+```
     python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m DrugResidue_W -o examples/output_DrugResidue_W.csv
-
+```
 Score with DrugScore<sup>Re</sup>:
-
+```
     python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m DrugScoreRe -o examples/output_DrugScoreRe.csv
+```
+
+### Tools
+To make things easier, we provide a protocol for docking-and-scoring using iDock (a fork of AutoDock Vina) and HybridSP, the input is a configuration file with the AutoDock Vina style, and the output mimics the iDock and Vina style, where the HybridSP score is presented with "REMARK HybridSP -0.91".
+
+In order to use this protocol, you need to have iDock binary in your system, and prepare your input configuration file with receptor, ligand, pocket and output defined as needed by AutoDock Vina. The example configuration file could be found in examples.
+
+The basic usage of the tool is:
+
+```
+python pyidock_hybridSP.py -c vina.config
+```
+
+## Citation
+To be updated
