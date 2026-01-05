@@ -17,27 +17,27 @@ def readmol2(filename):
     
     for i, line in enumerate(lines):
         if line.startswith('@<TRIPOS>MOLECULE'):
-            # 如果在一个分子的过程中进入新分子，则保存当前分子数据
+            
             if current_name is not None:
                 current_sybyl = np.array(current_sybyl)
                 current_xyz = np.array(current_xyz).astype(float)
                 molecules.append((current_name, current_sybyl, current_xyz))
             
-            # 开始新的分子
-            current_name = lines[i + 1]  # 分子名在下一行
+            
+            current_name = lines[i + 1]
             current_sybyl = []
             current_xyz = []
             inside_atom_section = False
         
         elif line.startswith('@<TRIPOS>ATOM'):
-            inside_atom_section = True  # 标记进入 ATOM 区域
+            inside_atom_section = True
         
         elif line.startswith('@<TRIPOS>BOND'):
-            inside_atom_section = False  # 标记离开 ATOM 区域
+            inside_atom_section = False
         
-        elif inside_atom_section and line:  # 在 ATOM 区域内解析原子信息
+        elif inside_atom_section and line:
             atom_data = line.split()
-            if len(atom_data) >= 6:  # 确保原子信息完整
+            if len(atom_data) >= 6:
                 atom_name = atom_data[5]
                 if atom_name in lig_elements:
                     current_sybyl.append(atom_name)
@@ -107,27 +107,26 @@ def read_lig_mol2_drugscore(filename):
     
     for i, line in enumerate(lines):
         if line.startswith('@<TRIPOS>MOLECULE'):
-            # 如果在一个分子的过程中进入新分子，则保存当前分子数据
+            
             if current_name is not None:
                 current_sybyl = np.array(current_sybyl)
                 current_xyz = np.array(current_xyz).astype(float)
                 molecules.append((current_name, current_sybyl, current_xyz))
             
-            # 开始新的分子
-            current_name = lines[i + 1]  # 分子名在下一行
+            current_name = lines[i + 1]
             current_sybyl = []
             current_xyz = []
             inside_atom_section = False
         
         elif line.startswith('@<TRIPOS>ATOM'):
-            inside_atom_section = True  # 标记进入 ATOM 区域
+            inside_atom_section = True
         
         elif line.startswith('@<TRIPOS>BOND'):
-            inside_atom_section = False  # 标记离开 ATOM 区域
+            inside_atom_section = False
         
-        elif inside_atom_section and line:  # 在 ATOM 区域内解析原子信息
+        elif inside_atom_section and line:
             atom_data = line.split()
-            if len(atom_data) >= 6:  # 确保原子信息完整
+            if len(atom_data) >= 6:
                 atom_name = atom_data[5]
                 if atom_name in drugscore_elements:
                     current_sybyl.append(atom_name)
