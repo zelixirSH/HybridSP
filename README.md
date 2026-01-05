@@ -9,7 +9,7 @@ The following packages should be installed (using pip or conda):
     openbabel
 
 HybridSP consists of three statistical potentials: ITScoreAff (distance-dependent atom-atom potential), DrugResidue<sub>W</sub> (distance-dependent atom-residue potential), and KORP-PL (orientation-dependent atom-residue potential). 
-Among these, [ITScoreAff](http://huanglab.phys.hust.edu.cn/ITScoreAff/) and [KORP-PL](https://team.inria.fr/nano-d/software/korp-pl/) need to be downloaded separately, and the binary files `ITScoreAff` and `KORP-PL` should be placed in the "potentials" directory. 
+Among these, [ITScoreAff](http://huanglab.phys.hust.edu.cn/ITScoreAff/) and [KORP-PL](https://team.inria.fr/nano-d/software/korp-pl/) need to be downloaded separately, and the binary files `ITScoreAff` and `KORP-PL` should be placed in the "potentials" directory. Please note that the two external binaries, ITScoreAff and KORP-PL, are compiled for Linux. Consequently, the current implementation of our HybridSP model is intended for Linux-based systems.  
 
 The download links are as follows:
 
@@ -89,5 +89,5 @@ To be updated
 To be updated
 
 ## Contacts
-To be updated
+wangzh336699@gmail.com
 
