@@ -33,12 +33,3 @@ def itscoreaff_score(itscoreaff, pro_pdb, lig_mol2, tmp='./tmp'):
     except subprocess.CalledProcessError as e:
         print(f"ITScoreAff Error: {e}")
         return None
-
-
-if __name__ == '__main__':
-    itscoreaff = '/data_test/home/lzzheng/wzh/softwares/ITScoreAff_v1.0/ITScoreAff'
-    pro_pdb = '/data_test/home/lzzheng/wzh/softwares/statistical/integrated_model/examples/1a30_protein.pdb'
-    lig_mol2 = '/data_test/home/lzzheng/wzh/softwares/statistical/integrated_model/examples/1a30_decoys.mol2'
-
-    out = itscoreaff_score(itscoreaff, pro_pdb, lig_mol2)
-    print(len(out))
