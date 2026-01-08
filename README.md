@@ -2,6 +2,8 @@
 HybridSP is a novel hybrid statistical potential that combines distance-dependent atom-atom, atom-residue, and orientation-dependent interactions into a unified scoring function. 
 It demonstrates exceptional accuracy in protein-ligand docking and virtual screening, rivaling or even surpassing state-of-the-art deep learning models.
 
+![Overview of HybridSP and the statistical results](https://github.com/zelixirSH/HybridSP/blob/main/images/model.png)
+
 ## Installation
 The following packages should be installed (using pip or conda):
 
@@ -49,6 +51,8 @@ Score with DrugScore<sup>Re</sup>:
 ```
     python score.py -r examples/1a30_protein.pdb -l examples/1a30_decoys.mol2 -m DrugScoreRe -o examples/output_DrugScoreRe.csv
 ```
+
+![Interactions of top-scoring decoys](https://github.com/zelixirSH/HybridSP/blob/main/images/interaction.png)
 
 ### Tools
 #### 1. Docking-and-score pipeline for more accurate docking and screening
