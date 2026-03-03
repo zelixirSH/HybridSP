@@ -90,6 +90,7 @@ The basic accuracy of HybridSP for this situation could be estimated based on th
 To be updated
 
 ## Citation
+```
 @article{wang2026Could,
 
    author = {Wang, Zhihao and Wang, Sheng and Guo, Jingjing and Mu, Yuguang and Liu, Xiangdong and Zheng, Liangzhen and Li, Weifeng},
@@ -115,7 +116,7 @@ To be updated
    type = {Journal Article}
    
 }
-
+```
 
 ## Contacts
 wangzh336699@gmail.com
