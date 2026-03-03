@@ -91,17 +91,29 @@ To be updated
 
 ## Citation
 @article{wang2026Could,
+
    author = {Wang, Zhihao and Wang, Sheng and Guo, Jingjing and Mu, Yuguang and Liu, Xiangdong and Zheng, Liangzhen and Li, Weifeng},
+   
    title = {Could statistical potential models achieve comparable or better performance than deep learning models?},
+   
    journal = {Briefings in Bioinformatics},
+   
    volume = {27},
+   
    number = {2},
+   
    pages = {bbag088},
+   
    ISSN = {1477-4054},
+   
    DOI = {10.1093/bib/bbag088},
+   
    url = {https://doi.org/10.1093/bib/bbag088},
+   
    year = {2026},
+   
    type = {Journal Article}
+   
 }
 
 
